@@ -42,3 +42,7 @@ app.listen(port, () => {
     console.log("App is running on port ", port)
 })
 
+//MAJOR PROBLEM /LEARNING NUMBER 1
+//_________________________________________________________________________________________________________________________________________
+// When we save data to database,for hashing password,We are using "pre" method. Hence, we need to make sure that we are not changing the password while doing tasks after saving the password to the database for the 1st time(since every time we do a task, we use the save function and hence the "pre method " is triggered and the aldready hashed password is hashed again.)
+// To do this we use the 'ismodified' function and check if the password is modified or not.If it is no we just return next,hence preventing multiple hashing of the same password!!!!
