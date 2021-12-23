@@ -1,0 +1,43 @@
+.movies .box-container .box{
+    flex:1 1 30rem;
+    height:40rem;
+    overflow: hidden;
+    position: relative;
+    margin:2rem;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.movies .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.movies .box-container .box .info{
+    padding:2rem;
+    width:100%;
+    position: absolute;
+    background:rgba(0,0,0,.7);
+}
+
+.movies .box-container .box:hover .info{
+    bottom:0;
+}
+
+.movies .box-container .box .info h3{
+    font-size: 3rem;
+    color:#fff;
+    padding-bottom: .5rem;
+}
+
+.movies .box-container .box .info .stars i{
+    font-size: 2rem;
+    color:orange;
+    padding:1rem .1rem;
+}
+
+.movies .box-container .box .info p{
+    font-size: 2rem;
+    color:#ccc;
+    padding:.5rem 0;
+}

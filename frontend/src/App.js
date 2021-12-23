@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Home/Main';
 import Trending from './components/Home/Trending';
+import TvMain from './components/Tv/TvMain';
+import Shows from './components/Tv/Shows';
 import './App.css'
 
 import { Route, Switch } from 'react-router-dom'
@@ -15,10 +17,13 @@ function App() {
       <Switch>
         <Route path='/' exact>
           <Main />
-          <Trending/>
+          <Trending />
         </Route>
         <Route path='/movies' exact>
-
+        </Route>
+        <Route path='/tv' exact>
+          <TvMain />
+          <Shows />
         </Route>
       </Switch>
       <Footer />

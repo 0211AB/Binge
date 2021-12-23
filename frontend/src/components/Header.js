@@ -20,7 +20,7 @@ export default function Header() {
 
             <nav className={`navbar ${isOpen ? 'nav-toggle' : ''}`}>
                 <ul>
-                    <li><NavLink to="/">home</NavLink ></li>
+                    <li><NavLink to="/" exact>home</NavLink ></li>
                     <li><NavLink to="/movies">movies</NavLink ></li>
                     <li><NavLink to="/tv">tV shows</NavLink ></li>
                     <li><NavLink to="/account">account</NavLink ></li>

@@ -1,0 +1,14 @@
+.movies{
+    background:#222;
+}
+
+.movies .heading span{
+    color:#fff;
+}
+
+.movies .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
