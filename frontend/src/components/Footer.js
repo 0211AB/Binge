@@ -10,10 +10,10 @@ export default function Footer() {
         <div className="footer">
 
             <div className="share">
-                <a href="#"> <GrFacebook /></a>
-                <a href="#"> <BsGithub /></a>
-                <a href="#"> <AiFillInstagram /> </a>
-                <a href="#"> <AiFillLinkedin /></a>
+                <a href="https://www.facebook.com/abhay.bajaj.319" target="_blank"> <GrFacebook /></a>
+                <a href="https://github.com/0211AB" target="_blank"> <BsGithub /></a>
+                <a href="https://www.instagram.com/_abhaybajaj/" target="_blank"> <AiFillInstagram /> </a>
+                <a href="https://www.linkedin.com/in/abhay-bajaj-736913207/" target="_blank"> <AiFillLinkedin /></a>
             </div>
 
             <h1 className="credit"> created by &nbsp;<a href="#"> abhay bajaj  &nbsp;</a>  all rights reserved! </h1>

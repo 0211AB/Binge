@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { Link, NavLink } from 'react-router-dom'
 
 import { FaBars } from 'react-icons/fa';
 
@@ -13,17 +14,16 @@ export default function Header() {
     return (
         <header>
 
-            <a href="#" className="logo"><span>BIN</span>GEE</a>
+            <Link to="/" className="logo">BINGEE</Link>
 
             <div id="menu" className="fas fa-bars" onClick={hamburgerEventHandler}><FaBars /></div>
 
             <nav className={`navbar ${isOpen ? 'nav-toggle' : ''}`}>
                 <ul>
-                    <li><a className="active" href="#home">home</a></li>
-                    <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#movies">movies</a></li>
-                    <li><a href="#product">product</a></li>
+                    <li><NavLink to="/">home</NavLink ></li>
+                    <li><NavLink to="/movies">movies</NavLink ></li>
+                    <li><NavLink to="/tv">tV shows</NavLink ></li>
+                    <li><NavLink to="/account">account</NavLink ></li>
                 </ul>
             </nav>
         </header>

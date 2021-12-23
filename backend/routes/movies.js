@@ -19,7 +19,7 @@ router.get('/movie/popular', async (req, res) => {
 })
 
 router.get('/movie/upcoming', async (req, res) => {
-    const baseurl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.API_KEY}`
+    const baseurl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.API_KEY}&region=IN`
 
     var appendurl = ''
 

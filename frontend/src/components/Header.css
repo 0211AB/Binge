@@ -11,6 +11,7 @@ header{
     justify-content: space-between;
     padding:2rem 3rem;
     border-radius: .5rem;
+    border:1px solid #666; 
 }
 
 header .logo{
