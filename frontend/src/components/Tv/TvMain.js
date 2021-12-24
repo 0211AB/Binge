@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
+import TvGenres from './TvGenres'
 import './TvMain.css'
-import './TvMainRow'
 import TvMainRow from './TvMainRow'
+
 
 export default function TvMain() {
 
     const [data, setData] = useState({})
+    const [isData, setisData] = useState(false)
     //console.log(data)
     //console.log(data.results)
 
@@ -21,28 +23,28 @@ export default function TvMain() {
                 })
 
             setData(await response.json())
+            setisData(true)
         }
         fetchdata()
     }, [])
 
 
-    if (data === {} || data.results === undefined)
+    if (!isData)
         return (
-            <h1 className="heading"> <span> Upcoming</span>  Movies </h1>
+            <h1 className="heading"> <span> Trending</span> Shows</h1>
         )
 
-
     return (
-        data.results.map((result) => {
-            if(result.id===71446)
-                return (
-                    <section key={result.id} className="about" id="about" >
-                        <h1 className="heading">MOST TRENDING TODAY </h1>                
-                        <TvMainRow id={result.id} img={result.poster_path} name={result.original_name} overview={result.overview} rating={result.vote_average}></TvMainRow>
+        <section className="about" id="about" >
+            < TvGenres />
+            <h1 className="heading">TRENDING TODAY </h1>
 
-                    </section>
-                )
-        })
+            {data.results.map((result) => {
+                if (result.id === 71446)
+                    return <TvMainRow key={result.id} id={result.id} key={result.id} img={result.poster_path} name={result.original_name} overview={result.overview} rating={result.vote_average} />
+            })}
+
+        </section>
     )
-}
 
+}

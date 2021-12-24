@@ -1,0 +1,7 @@
+.genres button{
+    margin: 1.2rem;
+    border-radius:5px;
+}
+.genres button:hover{
+    cursor: pointer;
+}

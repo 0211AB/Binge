@@ -10,4 +10,5 @@ ReactDOM.render(
   </BrowserRouter>, document.getElementById('root')
 )
 
-
+//MAJOR PROBLEM/LEARNING NUMBER 1
+//Since we are fetching data from an API use use effect,we need to use a state isdata and only if it is true,we should use map functions on the data returned otherwise the map functions will be used on undefined objects and hence will give an error.
