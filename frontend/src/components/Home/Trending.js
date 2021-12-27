@@ -5,7 +5,7 @@ import Box from './Box'
 export default function Trending() {
     const [data, setData] = useState({})
     //console.log(data)
-    console.log(data.results)
+    //console.log(data.results)
 
     useEffect(() => {
 
