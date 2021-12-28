@@ -16,7 +16,7 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/in/abhay-bajaj-736913207/" target="_blank"> <AiFillLinkedin /></a>
             </div>
 
-            <h1 className="credit"> created by &nbsp;<a href="#"> abhay bajaj  &nbsp;</a>  all rights reserved! </h1>
+            <h1 className="credit"> created by &nbsp;<a href="https://github.com/0211AB" target="_blank"> abhay bajaj  &nbsp;</a>  all rights reserved! </h1>
 
         </div>
     )
