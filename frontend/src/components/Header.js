@@ -23,7 +23,8 @@ export default function Header() {
                     <li><NavLink to="/" exact>home</NavLink ></li>
                     <li><NavLink to="/movies">movies</NavLink ></li>
                     <li><NavLink to="/tv">tV shows</NavLink ></li>
-                    <li><NavLink to="/account">account</NavLink ></li>
+                    <li><NavLink to="/search/movies">search</NavLink ></li>
+                    <li><NavLink to="/account">profile</NavLink ></li>
                 </ul>
             </nav>
         </header>
